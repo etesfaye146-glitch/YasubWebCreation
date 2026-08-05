@@ -25,8 +25,9 @@
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="JuhmV8RW62vfvhzepuH_2WFDsdpd5tK9yD91ZYethvY" />
 
-    <link rel="stylesheet" href="Untitled-1.css?v=13">
+    <link rel="stylesheet" href="Untitled-1.css?v=14">
 
+    <!-- ሁሉም ስታይሎች እዚሁ HTML ውስጥ ተካተዋል -->
     <style>
         * {
             box-sizing: border-box;
@@ -60,7 +61,7 @@
             list-style-type: none !important;
         }
 
-        /* FAQ Section Style */
+        /* የ FAQ ክፍል ዲዛይን */
         #faq {
             padding: 50px 20px;
             max-width: 850px;
@@ -76,7 +77,7 @@
             border: 1px solid #e2e8f0;
             border-radius: 10px;
             margin-bottom: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
             overflow: hidden;
         }
         .faq-question {
@@ -181,7 +182,7 @@
         <h2>ተደጋግመው የሚጠየቁ ጥያቄዎች (FAQ)</h2>
         
         <div class="faq-item">
-            <button class="faq-question">
+            <button class="faq-question" type="button">
                 <span>❓ ዌብሳይት ሰርቶ ለማጠናቀቅ ስንት ቀን ይወስዳል?</span>
                 <span class="faq-icon">▼</span>
             </button>
@@ -191,7 +192,7 @@
         </div>
 
         <div class="faq-item">
-            <button class="faq-question">
+            <button class="faq-question" type="button">
                 <span>❓ ዌብሳይቱ በስልክ (Mobile) ላይ በትክክል ይሰራል?</span>
                 <span class="faq-icon">▼</span>
             </button>
@@ -201,7 +202,7 @@
         </div>
 
         <div class="faq-item">
-            <button class="faq-question">
+            <button class="faq-question" type="button">
                 <span>❓ የራሴ ዶሜይንና ሆስቲንግ (Domain & Hosting) ያስፈልገኛል?</span>
                 <span class="faq-icon">▼</span>
             </button>
@@ -211,7 +212,7 @@
         </div>
 
         <div class="faq-item">
-            <button class="faq-question">
+            <button class="faq-question" type="button">
                 <span>❓ ስራው ካለቀ በኋላ የቴክኒክ ድጋፍ ይሰጣል?</span>
                 <span class="faq-icon">▼</span>
             </button>
@@ -262,21 +263,21 @@
 
     <!-- FAQ Toggle Script -->
     <script>
-        const faqQuestions = document.querySelectorAll('.faq-question');
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
 
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-                const faqItem = question.parentElement;
-                
-                // Close other items
-                document.querySelectorAll('.faq-item').forEach(item => {
-                    if (item !== faqItem) {
-                        item.classList.remove('active');
-                    }
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqItem = this.parentElement;
+                    
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        if (item !== faqItem) {
+                            item.classList.remove('active');
+                        }
+                    });
+
+                    faqItem.classList.toggle('active');
                 });
-
-                // Toggle current item
-                faqItem.classList.toggle('active');
             });
         });
     </script>
