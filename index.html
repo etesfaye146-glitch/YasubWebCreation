@@ -8,22 +8,25 @@
     <meta name="keywords" content="Yasub Website Creator, የዌብሳይት መስሪያ, Website Design Ethiopia, ዌብሳይት ዲዛይን, ዌብሳይት ልማት">
     <meta name="author" content="Yasub Website Creator">
 
-    <!-- Google Fonts (የአማርኛ ጽሑፉን ይበልጥ የሚያምር ያደርገዋል) -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://fav.farm/🌐">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Open Graph / Social Media Sharing -->
+    <!-- Social Media Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Yasub Website Creator | ዘመናዊ የዌብሳይት ልማት አገልግሎት">
     <meta property="og:description" content="ለድርጅትዎ ወይም ለግል ንግድዎ የሚሆን ማራኪ፣ ፈጣን እና ዘመናዊ ዌብሳይት በተመጣጣኝ ዋጋ እንሰራለን።">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200">
     
-    <!-- የ Google Search Console የመረጋገጫ ኮድ -->
+    <!-- Google Search Console -->
     <meta name="google-site-verification" content="JuhmV8RW62vfvhzepuH_2WFDsdpd5tK9yD91ZYethvY" />
 
-    <link rel="stylesheet" href="Untitled-1.css?v=5">
+    <link rel="stylesheet" href="Untitled-1.css?v=12">
 
-    <!-- ተጨማሪ የዲዛይን እና የስታይል ማስተካከያዎች -->
     <style>
         * {
             box-sizing: border-box;
@@ -55,6 +58,36 @@
         }
         .info-list li, .services-list li {
             list-style-type: none !important;
+        }
+
+        /* FAQ Section Style */
+        #faq {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        #faq h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .faq-item {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+        }
+        .faq-item details summary {
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            color: #1f2937;
+            outline: none;
+        }
+        .faq-item details p {
+            margin-top: 10px;
+            color: #4b5563;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -113,11 +146,43 @@
         </div>
     </section>
 
+    <!-- FAQ Section (ተደጋግመው የሚጠየቁ ጥያቄዎች) -->
+    <section id="faq">
+        <h2>ተደጋግመው የሚጠየቁ ጥያቄዎች (FAQ)</h2>
+        
+        <div class="faq-item">
+            <details>
+                <summary>❓ ዌብሳይት ሰርቶ ለማጠናቀቅ ስንት ቀን ይወስዳል?</summary>
+                <p>እንደ ስራው አይነት ይለያያል፤ እንደ መሰረታዊ (Basic) ያሉ ባለ 1 ገጽ ዌብሳይቶች ከ 2-3 ቀናት ውስጥ የሚያልቁ ሲሆን ባለብዙ ገጽ ዌብሳይቶች ደግሞ ከ 5-7 ቀናት ይወስዳሉ።</p>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>❓ ዌብሳይቱ በስልክ (Mobile) ላይ በትክክል ይሰራል?</summary>
+                <p>አዎ! የምንሰራቸው ዌብሳይቶች በሙሉ በስልክ፣ በታብሌት እና በኮምፒውተር ላይ በትክክልና በሚያምር ሁኔታ እንዲታዩ (Responsive) ተደርገው የተሰሩ ናቸው።</p>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>❓ የራሴ ዶሜይንና ሆስቲንግ (Domain & Hosting) ያስፈልገኛል?</summary>
+                <p>የራስዎ ካለ መጠቀም ይችላሉ፤ ከሌለዎ ግን ተስማሚውን ዶሜይን መርጠን በነፃ ወይም በተመጣጣኝ ዋጋ የማስተካከልና የማገናኘት ስራውን ሙሉ በሙሉ እንሰራለን።</p>
+            </details>
+        </div>
+
+        <div class="faq-item">
+            <details>
+                <summary>❓ ስራው ካለቀ በኋላ የቴክኒክ ድጋፍ ይሰጣል?</summary>
+                <p>አዎ! ዌብሳይቱ ተሰርቶ ከተረከቡ በኋላ እንደመረጡት ፓኬጅ አይነት ነፃ የቴክኒክ ድጋፍ እና ማስተካከያ አገልግሎት እንሰጣለን።</p>
+            </details>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact-wrapper">
         <div class="contact-container">
             
-            <!-- በግራ በኩል፡ መረጃዎች -->
             <div class="contact-info">
                 <h2>ያግኙኝ 📞</h2>
                 <p>ለማንኛውም አይነት የዌብሳይት ስራ ጥያቄ ወይም መረጃ በስልክ ወይም በቴሌግራም ማናገር ይችላሉ።</p>
@@ -130,15 +195,13 @@
                 </ul>
             </div>
 
-            <!-- በቀኝ በኩል፡ የመልእክት መላኪያ ፎርም -->
             <div class="contact-form-box">
                 <h3>መልእክት ይላኩ</h3>
-                <form id="my-form" action="https://formspree.io/f/mzepbdrd" method="POST" class="contact-form">
+                <form action="https://formspree.io/f/mzepbdrd" method="POST" class="contact-form">
                     <input type="text" name="name" placeholder="ሙሉ ስምዎ" required>
                     <input type="tel" name="phone" placeholder="ስልክ ቁጥርዎ" required>
                     <textarea name="message" rows="4" placeholder="የሚፈልጉትን ስራ በአጭሩ ይጻፉ..." required></textarea>
                     <button type="submit" id="submit-btn">መልእክት ላክ ✉️</button>
-                    <p id="form-status" style="margin-top: 10px; font-weight: bold;"></p>
                 </form>
             </div>
 
@@ -154,51 +217,6 @@
     <a href="https://t.me/eobed12321" target="_blank" rel="noopener" class="float-telegram">
         ✈️ በቴሌግራም አውራኝ
     </a>
-
-    <!-- JavaScript For Formspree Submission -->
-    <script>
-        const form = document.getElementById("my-form");
-        const status = document.getElementById("form-status");
-        const btn = document.getElementById("submit-btn");
-
-        async function handleSubmit(event) {
-          event.preventDefault();
-          const data = new FormData(event.target);
-          btn.innerText = "እየላከ ነው...";
-          btn.disabled = true;
-
-          fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-          }).then(response => {
-            if (response.ok) {
-              status.style.color = "#10b981";
-              status.innerHTML = "የላኩት መልእክት በትክክል ደርሶናል፤ እናመሰግናለን!";
-              form.reset();
-            } else {
-              response.json().then(data => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.style.color = "#ef4444";
-                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
-                } else {
-                  status.style.color = "#ef4444";
-                  status.innerHTML = "መልእክቱን ለመላክ ችግር አጋጥሟል፤ እባክዎ ድጋሚ ይሞክሩ።";
-                }
-              })
-            }
-          }).catch(error => {
-            status.style.color = "#ef4444";
-            status.innerHTML = "መልእክቱን ለመላክ ችግር አጋጥሟል፤ እባክዎ ድጋሚ ይሞክሩ።";
-          }).finally(() => {
-            btn.innerText = "መልእክት ላክ ✉️";
-            btn.disabled = false;
-          });
-        }
-        form.addEventListener("submit", handleSubmit);
-    </script>
 
 </body>
 </html>
