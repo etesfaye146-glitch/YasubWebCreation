@@ -8,6 +8,11 @@
     <meta name="keywords" content="Yasub Website Creator, የዌብሳይት መስሪያ, Website Design Ethiopia, ዌብሳይት ዲዛይን, ዌብሳይት ልማት">
     <meta name="author" content="Yasub Website Creator">
 
+    <!-- Google Fonts (የአማርኛ ጽሑፉን ይበልጥ የሚያምር ያደርገዋል) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- Open Graph / Social Media Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Yasub Website Creator | ዘመናዊ የዌብሳይት ልማት አገልግሎት">
@@ -16,7 +21,42 @@
     <!-- የ Google Search Console የመረጋገጫ ኮድ -->
     <meta name="google-site-verification" content="JuhmV8RW62vfvhzepuH_2WFDsdpd5tK9yD91ZYethvY" />
 
-    <link rel="stylesheet" href="Untitled-1.css?v=2">
+    <link rel="stylesheet" href="Untitled-1.css?v=5">
+
+    <!-- ተጨማሪ የዲዛይን እና የስታይል ማስተካከያዎች -->
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Noto Sans Ethiopic', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        ul {
+            list-style: none !important;
+            padding-left: 0 !important;
+            margin-left: 0 !important;
+        }
+        a {
+            text-decoration: none;
+        }
+        .btn-primary {
+            display: inline-block;
+            background-color: #2563eb;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+        .info-list li, .services-list li {
+            list-style-type: none !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -31,8 +71,7 @@
     <!-- Services Section -->
     <section id="services">
         <h2>የምንሰጣቸው አገልግሎቶች</h2>
-        <!-- list-style: none እና padding: 0 የዝርዝር ምልክቶቹን ያጠፋቸዋል -->
-        <ul class="services-list" style="list-style: none; padding: 0;">
+        <ul class="services-list">
             <li>
                 <h3>🌐 የንግድ ዌብሳይቶች (Business Websites)</h3>
                 <p>ለድርጅትዎ፣ ለካፌ፣ ለሬስቶራንት ወይም ለተለያዩ አገልግሎቶች ማስተዋወቂያ የሚሆኑ ባለብዙ ገጽ ዌብሳይቶች።</p>
@@ -83,7 +122,7 @@
                 <h2>ያግኙኝ 📞</h2>
                 <p>ለማንኛውም አይነት የዌብሳይት ስራ ጥያቄ ወይም መረጃ በስልክ ወይም በቴሌግራም ማናገር ይችላሉ።</p>
                 
-                <ul class="info-list" style="list-style: none; padding: 0;">
+                <ul class="info-list">
                     <li><strong>📱 ስልክ፦</strong> <a href="tel:+251911642184">+251 911 642 184</a></li>
                     <li><strong>✈️ ቴሌግራም፦</strong> <a href="https://t.me/eobed12321" target="_blank" rel="noopener">@eobed12321</a></li>
                     <li><strong>✉️ ኢሜይል፦</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yasub9506@gmail.com" target="_blank" rel="noopener">yasub9506@gmail.com</a></li>
@@ -94,7 +133,7 @@
             <!-- በቀኝ በኩል፡ የመልእክት መላኪያ ፎርም -->
             <div class="contact-form-box">
                 <h3>መልእክት ይላኩ</h3>
-                <form id="my-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                <form id="my-form" action="https://formspree.io/f/mzepbdrd" method="POST" class="contact-form">
                     <input type="text" name="name" placeholder="ሙሉ ስምዎ" required>
                     <input type="tel" name="phone" placeholder="ስልክ ቁጥርዎ" required>
                     <textarea name="message" rows="4" placeholder="የሚፈልጉትን ስራ በአጭሩ ይጻፉ..." required></textarea>
